@@ -16,7 +16,8 @@ ENV SBT_VERSION 0.13.11
 RUN apt-get update \
  && apt-get install -y \
  wget \
- unzip
+ unzip \
+ sshpass
 
 # Get Activator
 RUN cd /tmp && \
