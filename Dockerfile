@@ -18,10 +18,13 @@ RUN apt-get update \
  wget \
  unzip \
  sshpass \
- npm
+ npm \
+ curl
 
-RUN npm install npm -g
-RUN npm install webpack -g
+RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
+RUN apt-get install -y nodejs
+RUN npm install -g npm
+RUN npm install -g webpack
 
 # Get Activator
 RUN cd /tmp && \
