@@ -17,7 +17,11 @@ RUN apt-get update \
  && apt-get install -y \
  wget \
  unzip \
- sshpass
+ sshpass \
+ npm
+
+RUN npm install npm -g
+RUN npm install webpack -g
 
 # Get Activator
 RUN cd /tmp && \
