@@ -1,5 +1,5 @@
 FROM dsferruzza/openjdk
-MAINTAINER David Sferruzza <david.sferruzza@gmail.com>
+MAINTAINER Simon Vandel Sillesen <simon.vandel@gmail.com>
 
 # Let the conatiner know that there is no tty
 ENV DEBIAN_FRONTEND noninteractive
